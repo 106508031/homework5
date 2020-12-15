@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @keyframes flying {
+            0% {
+                transform: translateX(0px);
+            }
+            
+            100% {
+                transform: translateX(-708px);
+            }
+        
+        }
+        .bird-flying-block {
+            width: 70px;
+            height: 125px;
+            overflow: hidden;
+        }
+
+        .bird {
+            animation-name: flying;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(10, end);
+        }
+    </style>
+</head>
+<body>
+    <div class="bird-flying-block">
+        <img class="bird" height="100x" src="./birds-animation-steps.svg" >
+    </div>
+</body>
+</html>
